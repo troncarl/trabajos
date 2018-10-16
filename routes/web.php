@@ -21,3 +21,22 @@ Route::get('prueba/{name}','PruebaController@prueba');
 Route::resource('trainer','TrainerController');
 
 Route::get('/name/{name}/lastname/{ln}','PruebaController@index2');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get ('/redirect','SocialController@redirect');
+Route::get ('/callback','SocialController@callback');
+
